@@ -55,7 +55,8 @@ jobs:
          exit-code: '1'
          ignore-unfixed: true
          severity: 'CRITICAL,HIGH'
-         ignorefile: '.trivyignore'
+         trivyignores: |
+          CVE-2025-43859
 
  deploy:
    needs: security
